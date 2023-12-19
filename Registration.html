@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Website</title>
+    <link rel="stylesheet" href="Registration.css">
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        <div class="website-name"><img src="images/logo4.png"  width="400" height= "150"></div>
+            <div class="links">
+                <button class="button home-button" onclick="redirecttohomepage()" ><img class="icon" src="images/home.png" alt="Home"> Home</button>
+                <button class="button login-button" onclick="redirecttologin()" ><img class="icon" src="images/login.png" alt="Login"> Login </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+            
+        function redirecttologin() {
+            window.location.href="loginpage1.html";
+        }
+        function redirecttoregister() {
+            window.location.href="Registration.html";
+        }
+        function redirecttohomepage() {
+            window.location.href="homepage.html";
+        }
+      </script>
+
+    <hr>
+    <div class="registration-container">
+        
+        <div class="registration-buttons">
+            <button class="registration-button" id="candidate-button">Registration as Candidate</button>
+            <button class="registration-button" id="voter-button">Registration as Voter</button>
+        </div>
+
+        <div class="form-container">
+            <div class="candidate-form" id="candidate-form">
+               
+                <h2>Candidate Registration </h2><br> 
+               
+                <form action="register.php" method="POST" enctype="multipart/form-data">
+                    <div class="form-row">
+                        <input type="text" class="ele" placeholder="Name" name="Name" maxlength="30" size="48" required>
+                        <input type="email" class="ele" placeholder="Email" name="Email" size="49" required>
+                    </div>
+                    
+                    <div class="form-row">    
+                        <input type="text" class="ele" placeholder="College" name="College" size="48" maxlength="50" required>
+                        <input type="text" class="ele" placeholder="Type of Election" name="TypeofElection" maxlength="50" size="49" required>
+                    </div>
+                    
+                    <div class="form-row">  
+                        <input type="text" class="ele" placeholder="Position for which you want to standing" name="Position" maxlength="50" size="48" required>
+                        <input type="file" class="ele" name="photo" accept="image/*">
+                    </div>
+                    
+                    <div class="form-row">
+                        <input type="text" class="ele" placeholder="Description" name="Description" maxlength="200" size="48" required> 
+                        <input type="text" class="ele" placeholder="Enter Username" name="Username" maxlength="20"  size="49" required>
+                    </div>
+
+                    <div class="form-row">
+                        <input type="password" class="ele" placeholder="Password" name="Password" size="48" maxlength="10" required>
+                        <input type="password" class="ele" placeholder="Confirm Password" name="cpassword" maxlength="10" size="49" required>
+                    </div>
+                    
+                    <button class="submitbutton" type="submit">Register</button>
+                </form>
+            </div>
+
+
+            <div class="voter-form" id="voter-form">
+
+                <h2>Voter Registration</h2><br> 
+                
+                <form action="voterregister.php" method="post">
+                    <div class="form-row">
+                        <input type="text" class="ele" placeholder="Name" name="Name" maxlength="30" size="48" required>
+                        <input type="email" class="ele" placeholder="Email" name="Email" size="49" required>
+                </div>
+                
+                <div class="form-row ">
+                    <input type="text" class="ele" placeholder="College" name="College" size="48" maxlength="50" required>
+                    <input type="text" class="ele" placeholder="Enter Username" name="Username" maxlength="20"  size="49" required></div>
+                
+                <div class="form-row">
+                    
+                    <input type="password" class="ele" placeholder="Password" name="Password" size="48" maxlength="10" required>
+                    <input type="password" class="ele" placeholder="Confirm Password" name="Cpassword" maxlength="10" size="49" required>
+                
+                </div>
+                    <button class="submitbutton" type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+    <script >
+
+document.getElementById("candidate-button").addEventListener("click", function() {
+    document.getElementById("candidate-form").style.display = "block";
+    document.getElementById("voter-form").style.display = "none";
+});
+
+document.getElementById("voter-button").addEventListener("click", function() {
+    document.getElementById("voter-form").style.display = "block";
+    document.getElementById("candidate-form").style.display = "none";
+});
+
+    </script>
+</div>
+</body>
+</html>

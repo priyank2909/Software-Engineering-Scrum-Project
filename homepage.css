@@ -1,0 +1,293 @@
+        /* Set default styles for the entire body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            position: relative;
+        }
+
+        /* Define maximum width and other styles for the main container */
+        .container {
+            max-width: 1250px;
+            margin-left: 5rem;
+            /* margin: 0px 30px 10px 40px;
+            padding: 0rem 4rem 1rem 4rem; */
+        }
+
+        /* Pseudo-element for top left corner decoration */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 300px;
+            background-image: linear-gradient(220deg, #669880, #f2d65b);
+            border-radius: 0% 0% 100% 0%;
+            z-index: -1;
+        }
+
+        /* Pseudo-element for bottom right corner decoration */
+        body::after {
+            content: "";
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 400px;
+            height: 300px;
+            background-image: linear-gradient(220deg, #669880, #f2d65b);
+            border-radius: 100% 0% 0% 0%;
+            z-index: -1;
+        }
+
+        /* Style for the header section */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 4rem;
+            padding-top: 2rem;
+            margin-top: -50px;
+        }
+
+        /* Style for the website name/logo */
+        .website-name {
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-top: 0px;
+            margin-right: 220px;
+            margin-left: 40px;
+        }
+
+        /* Style for the links/navigation section */
+        .links {
+            display: flex;
+            align-items: center;
+            margin-left: 7rem; /* Pushes the links to the right */
+            padding: 1rem 0; /* Add padding above and below links */
+        }
+
+        /* Style for individual link items */
+        .links a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 2rem;
+            margin-right: 1rem; /* Adds spacing between links */
+            background-color: #333;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            display: flex; /* Align text and icon in one line */
+            align-items: center;
+            white-space: nowrap;
+        }
+
+        /* Remove margin from the last link item to prevent extra spacing */
+        .links a:last-child {
+            margin-right: 0;
+        }
+
+        /* Style for link items on hover */
+        .links a:hover {
+            background-color: grey;
+        }
+
+        .main-content {
+            width: 60rem;
+            display: flex;
+            align-items: center;
+            margin: 0rem 0rem 0rem 18rem;
+            box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            flex: 1;
+            padding: 3rem 0rem 3rem 2rem;
+        }
+
+        .image {
+            width: 30rem;
+            height: 20rem;
+        }
+
+        .text-content {
+            flex: 2;
+            padding: 0rem 0rem 0rem 5rem;
+            
+        }
+
+        .text-content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .text-content p {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            text-align: justify;
+            padding: 0rem 5rem 0rem 0rem;
+        }
+
+        .team-section {
+            width: 60rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 3rem;
+            margin-left: 3rem;
+            padding: 0rem 0rem 0rem 15rem;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-member-image {
+            width: 10rem;
+            height: 10rem;
+            background-color: #333;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            background-size: cover;
+        }
+
+        .team-member-image.member1 {
+            background-image: url('images/cat.jpg'); /* Replace with actual image URL */
+        }
+
+        .team-member-image.member2 {
+            background-image: url('images/cat.jpg'); /* Replace with actual image URL */
+        }
+
+        .team-member-image.member3 {
+            background-image: url('images/cat.jpg'); /* Replace with actual image URL */
+        }
+
+        .team-member-image.member4 {
+            background-image: url('images/cat.jpg'); /* Replace with actual image URL */
+        }
+
+        .team-member-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member-role {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        
+        .footer {
+            color: black;
+            padding: 20px;
+            margin-left: 60px;
+            display: flex;
+            justify-content: space-between;
+            width: 86rem;
+        }
+
+        .compartment {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .compartment h3 {
+            margin-top: 0;
+            padding-bottom: 10px;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+
+        .compartment ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .compartment ul li {
+            margin-bottom: 5px;
+        }
+
+        .compartment a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .compartment p {
+            margin: 0;
+            text-align: center;
+        }
+
+        
+        .section {
+            width: 60rem;
+            display: flex;
+            align-items: center;
+            margin: 0rem 0rem 0rem 17rem;
+            box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-with-image {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .content-with-image .text-content-third {
+            flex: 1;
+            padding-right: 2rem;
+            padding: 0rem 0rem 0rem 2rem;
+        }
+
+        .content-with-image .image-container-third {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            padding: 3rem 2rem 3rem 2rem;
+        }
+
+        /* Update image size if needed */
+        .content-with-image .image {
+            width: 560px; 
+            height: 100px;
+        } 
+
+        hr {
+            border:none;
+            width: 70rem;
+            height: 50px;
+            margin-top: -3rem;
+            margin-left: 13rem;
+            border-bottom: 1px solid #1f1209;
+            box-shadow: 0 20px 20px -20px #333;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            margin-right: 1rem;
+            font-size: 1rem;
+            color: black;
+            background: linear-gradient(135deg, #1E8449, #FFC107);
+            border: 1px dashed black;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            align-items: center;
+            white-space: nowrap;
+        }
+
+        .button:hover {
+            background-image: linear-gradient(135deg, #89d38b, #ffea6f);
+        }
+
+        /* Icon styles */
+        .icon {
+            margin-right: 0.5rem;
+            width: 1.2em;
+            height: 1.2em;
+        }

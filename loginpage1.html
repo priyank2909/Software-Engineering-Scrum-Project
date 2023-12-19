@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="loginpage1.css"> 
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="website-name"><img src="images/logo4.png" width="400" height="150"></div>
+    <div class="links">
+      <button class="button home-button" onclick="redirecttohomepage()" ><img class="icon" src="images/home.png" alt="Home"> Home</button>
+      <button class="button register-button" onclick="redirecttoregister()" ><img class="icon" src="images/register.png" alt="Register"> Register</button>
+    </div>
+  </div>
+</div>
+<script>
+            
+  function redirecttologin() {
+      window.location.href="loginpage1.html";
+  }
+  function redirecttoregister() {
+      window.location.href="Registration.html";
+  }
+  function redirecttohomepage() {
+      window.location.href="homepage.html";
+  }
+</script> 
+
+<hr>
+
+<div class="img-login-container">
+  <div class="login-card card">
+
+    <form id="submitForm" action="loginpage1.php" method="POST">
+      <div class="form-group required">
+        <label for="username">Username</label>
+        <input type="text" class="form-control text-lowercase" id="username" required name="User" placeholder="Enter Username">
+      </div>
+    
+      <div class="form-group required">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" required id="password" name="Password" placeholder="Password">
+      </div>
+     
+      <div class="form-group pt-1">
+        <button class="btn btn-primary btn-block" type="submit" name="login">Log In</button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>

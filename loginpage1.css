@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    position: relative;
+  }
+
+  .container {
+    max-width: 1250px;
+    margin-left: 5rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4rem;
+    padding-top: 2rem;
+    margin-top: -50px;
+  }
+
+  .website-name {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 40px;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    margin-left: 7rem;
+    padding: 1rem 0;
+  }
+
+  .links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    margin-right: 1rem;
+    background-color: #333;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .links a:hover {
+    background-color: grey;
+  }
+
+  .card {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  /* New styles for the image and centered login button */
+  .img-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-top: -5px;
+  }
+
+  .img-login-container img {
+    width: 300px;
+    height: 300px;
+    margin-right: 30px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    width: 380px;
+    height: 400px;
+    opacity: 0.8;
+  }
+
+  .login-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e6e2b3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px; /* Increase padding for better spacing */
+    width: 380px;
+    height: 300px;
+    opacity: 0.8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+
+  .login-card form {
+    width: 100%;
+  }
+
+  .login-card .form-group {
+    margin-bottom: 15px;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .login-card .form-control {
+    width: 350px;
+    height: 30px;
+    margin-top: 20px;
+    padding: 5px; /* Decrease padding for smaller input boxes */
+    font-size: 14px; /* Decrease font size for smaller input boxes */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: border-color 0.3s ease-in-out;
+  }
+
+  .login-card .form-control:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+
+  .login-card .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .login-card .btn {
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .login-card .btn:hover {
+    background-color: #0056b3;
+  }
+
+  /* Pseudo-element for top left corner decoration */
+      body::before {
+          content: "";
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 500px;
+          height: 300px;
+          background-color: #ffcc00;
+          border-radius: 0% 0% 100% 0%;
+          z-index: -1;
+      }
+
+      /* Pseudo-element for bottom right corner decoration */
+      body::after {
+          content: "";
+          position: fixed;
+          bottom: 0;
+          right: 0;
+          width: 400px;
+          height: 300px;
+          background-color: #ffcc00;
+          border-radius: 100% 0% 0% 0%;
+          z-index: -1;
+      }
+      .button {
+          display: inline-flex;
+          align-items: center;
+          padding: 0.5rem 1rem;
+          margin-right: 1rem;
+          font-size: 1rem;
+          color: white;
+          background: grey;
+          border: 1px black;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          align-items: center;
+          white-space: nowrap;
+      }
+
+      .button:hover {
+          background: #ffcc00;
+          color: black;
+      }
+      .icon {
+          margin-right: 0.5rem;
+          width: 1.2em;
+          height: 1.2em;
+      }
+
+      hr {
+        border:none;
+        width: 70rem;
+        height: 50px;
+        margin-top: -3rem;
+        margin-left: 13rem;
+        border-bottom: 1px solid #1f1209;
+        box-shadow: 0 20px 20px -20px #333;
+    }
